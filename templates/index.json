@@ -1,1 +1,18 @@
-
+{
+  "sections": {
+    "hero": {
+      "type": "cinematic-hero",
+      "settings": {
+        "heading": "AromaCanvas Elegance",
+        "subheading": "Uncompromising editorial journeys told through fine scent."
+      }
+    },
+    "pyramid": {
+      "type": "fragrance-pyramid"
+    }
+  },
+  "order": [
+    "hero",
+    "pyramid"
+  ]
+}
