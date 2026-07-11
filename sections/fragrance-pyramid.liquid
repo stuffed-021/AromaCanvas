@@ -1,1 +1,36 @@
+<section class="pyramid-section">
+  <div class="pyramid-interactive-wrapper">
+    <div class="pyramid-visual-column">
+      <div class="pyramid-structure-canvas">
+        <button class="pyramid-tier tier-top" aria-expanded="true" data-tier="top" aria-controls="panel-top">Top Notes</button>
+        <button class="pyramid-tier tier-heart" aria-expanded="false" data-tier="heart" aria-controls="panel-heart">Heart Notes</button>
+        <button class="pyramid-tier tier-base" aria-expanded="false" data-tier="base" aria-controls="panel-base">Base Notes</button>
+      </div>
+    </div>
+    <div class="pyramid-content-column">
+      <div class="tier-panel" id="panel-top">
+        <h3>Top Architecture</h3>
+        <p>High volatility notes that craft your immediate entry into the fragrance canvas.</p>
+      </div>
+      <div class="tier-panel hidden" id="panel-heart">
+        <h3>Heart Core</h3>
+        <p>The expressive thematic structure of the fragrance which stays present for several hours.</p>
+      </div>
+      <div class="tier-panel hidden" id="panel-base">
+        <h3>Base Silhouette</h3>
+        <p>Heavy molecular weight fixation anchors the fragrance close to the skin for entire days.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+{% schema %}
+{
+  "name": "Fragrance Pyramid",
+  "presets": [
+    {
+      "name": "Fragrance Pyramid"
+    }
+  ]
+}
+{% endschema %}
