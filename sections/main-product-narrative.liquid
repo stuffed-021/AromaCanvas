@@ -1,1 +1,41 @@
+<section class="product-narrative" aria-label="Fragrance Journey: {{ product.title | default: 'Sample Perfume' }}">
+  
+  <div class="narrative-act act-opening" data-act-phase="top" style="--act-bg: #FAF8F5;">
+    <div class="act-grid">
+      <div class="act-content">
+        <span class="editorial-eyebrow">The Opening</span>
+        <h1 class="editorial-title">{{ product.title | default: "Santal Ephemeral" }}</h1>
+        <p>{{ product.description | default: "A brilliant hyper-volatile flash of crisp Moroccan Neroli paired with wild pepper seeds." }}</p>
+        {% render 'scent-indicators' %}
+      </div>
+    </div>
+  </div>
 
+  <div class="narrative-act act-heart" data-act-phase="heart" style="--act-bg: #F3EFE9;">
+    <div class="act-grid layout-reverse">
+      <div class="act-content">
+        <span class="editorial-eyebrow">The Core Evolution</span>
+        <h2 class="editorial-heading">The Heart Accords</h2>
+        <p>Grounded by structured elements of warm concrete accord, absolute jasmine petals, and ancient papyrus leaves.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="narrative-act act-base" data-act-phase="base" style="--act-bg: #1A1A1A; --text-color-override: #FAF8F5;">
+    <div class="act-grid">
+      <div class="act-content dark-theme-override">
+        <span class="editorial-eyebrow">The Legacy Trace</span>
+        <h2 class="editorial-heading">The Base Silhouette</h2>
+        <p>A continuous trail of single-source Caledonian Sandalwood oil, raw amber tears, and Madagascar vanilla pod tincture.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "Product Narrative Core",
+  "settings": []
+}
+{% endschema %}
